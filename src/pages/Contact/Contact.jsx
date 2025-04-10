@@ -2,6 +2,8 @@ import React from 'react';
 import gmail from '../../assets/gmail.svg';
 import telegram from '../../assets/telegram.svg';
 import github from '../../assets/github.svg';
+import instagram from '../../assets/instagram.svg';
+import { GrInstagram } from 'react-icons/gr';
 function Contact() {
   return (
     <div className="flex flex-col items-center container mx-auto">
@@ -10,9 +12,8 @@ function Contact() {
           Bog’lanish
         </h2>
         <h3 className="w-[112px] bg-[#39965F] h-4 rounded-[10px] "></h3>
-
       </div>
-      <div className="flex items-center gap-[20px] pl-[20px] pt-[24px] mt-[24px]">
+      <div className="flex items-center gap-[20px] pl-[20px] pt-[24px] mt-[24px] flex-wrap pr-[20px]">
         <div className="flex flex-col items-center w-[290.67px] h-[190px] rounded-[12px] pt-[28px] pb-[28px] border-[1px] border-[#1B1B1B] bg-[#1B1B1B]">
           <img
             src={gmail}
@@ -46,6 +47,18 @@ function Contact() {
           </a>
           <p className="text-[16px] text-[#FFFFFFB2] pt-[8px]">
             muzaffarovhayotbek
+          </p>
+        </div>
+
+        <div className="flex flex-col items-center text-center w-[290.67px] h-[190px] rounded-[12px] pt-[28px] pb-[28px] border-[1px] border-[#1B1B1B] bg-[#1B1B1B]">
+          <GrInstagram className="w-[64px] h-[64px] text-white object-cover" />
+          <a href="https://www.instagram.com/muzaffarvch_mr">
+            <h4 className="w-[96px] text-white text-[20px] pt-[8px]">
+              Instagram
+            </h4>
+          </a>
+          <p className="text-[16px] text-[#FFFFFFB2] pt-[8px]">
+            muzaffarvch_mr
           </p>
         </div>
       </div>
