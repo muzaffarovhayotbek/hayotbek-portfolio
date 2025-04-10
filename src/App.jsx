@@ -4,7 +4,6 @@ import MainLayout from './layout/MainLayout';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
-import Projects from './pages/projects/projects';
 
 function App() {
   return (
@@ -18,7 +17,6 @@ function App() {
             </MainLayout>
           }
         ></Route>
-      <Route path='/projects' element = {<MainLayout><Projects/></MainLayout>}></Route>
         <Route
           path="/about"
           element={
