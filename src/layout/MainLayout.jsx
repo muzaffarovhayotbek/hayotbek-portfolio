@@ -7,10 +7,8 @@ import LeftBar from '../components/LeftBar';
 function MainLayout({ children }) {
   return (
     <div className="flex min-h-dvh flex-row">
-      {/* Left sidebar */}
       <LeftBar />
 
-      {/* Main content */}
       <div className="flex flex-col flex-grow">
         <header className="pt-[8px] pb-[8px] bg-[#1B1B1B] pl-[14px] pr-[14px]">
           <div className="container mx-auto flex items-center justify-between">
@@ -28,22 +26,55 @@ function MainLayout({ children }) {
             </div>
             <div className="flex items-center gap-[14px]">
               <ul className="flex items-center gap-[24px] text-[16px] text-white leading-[100%] font-[400]">
-                <NavLink to="/">
-                  <li>Bosh sahifa</li>
-                </NavLink>
-                <NavLink to="/about">
-                  <li>Haqida</li>
-                </NavLink>
-                <NavLink to="/projects">
-                  <li>Loyihalar</li>
-                </NavLink>
-                <NavLink to="/contact">
-                  <li>Bog'lanish</li>
-                </NavLink>
+                <li>
+                  <NavLink
+                    to="/"
+                    className={({ isActive }) =>
+                      isActive ? 'text-[#39965F]' : 'hover:text-[#39965F]'
+                    }
+                  >
+                    Bosh sahifa
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/about"
+                    className={({ isActive }) =>
+                      isActive ? 'text-[#39965F]' : 'hover:text-[#39965F]'
+                    }
+                  >
+                    Haqida
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/projects"
+                    className={({ isActive }) =>
+                      isActive ? 'text-[#39965F]' : 'hover:text-[#39965F]'
+                    }
+                  >
+                    Loyihalar
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/contact"
+                    className={({ isActive }) =>
+                      isActive ? 'text-[#39965F]' : 'hover:text-[#39965F]'
+                    }
+                  >
+                    Bog'lanish
+                  </NavLink>
+                </li>
               </ul>
               <div className="header-git">
-                <a href="https://github.com/muzaffarovhayotbek">
-                  <img src={github} alt="github" width={32} />
+                <a
+                  href="https://github.com/muzaffarovhayotbek"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:opacity-80 transition-all"
+                >
+                  <img src={github} alt="GitHub" width={32} />
                 </a>
               </div>
             </div>

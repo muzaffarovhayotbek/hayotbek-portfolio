@@ -11,7 +11,7 @@ function Contact() {
         <h2 className="text-[32px] pb-[12px] pt-[32px] text-[#FFFFFF]">
           Bog’lanish
         </h2>
-        <h3 className="w-[112px] bg-[#39965F] h-4 rounded-[10px] "></h3>
+        <h3 className="w-[112px] bg-[#39965F] h-2 rounded-[10px] "></h3>
       </div>
       <div className="flex items-center gap-[20px] pl-[20px] pt-[24px] mt-[24px] flex-wrap pr-[20px]">
         <div className="flex flex-col items-center w-[290.67px] h-[190px] rounded-[12px] pt-[28px] pb-[28px] border-[1px] border-[#1B1B1B] bg-[#1B1B1B]">

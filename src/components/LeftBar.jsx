@@ -25,18 +25,18 @@ function LeftBar() {
               <h2 className="text-white text-[16px] font-[500] pb-[2px]">
                 E-pochta
               </h2>
-              <p className="text-[#FFFFFFB2] text-[16px]">
-                hmuzfrov@gmail.com
-              </p>
+              <p className="text-[#FFFFFFB2] text-[16px]">hmuzfrov@gmail.com</p>
             </div>
           </div>
 
           <div className="flex gap-[10px] pt-[14px]">
             <img src={github} alt="github" width={44} />
             <div className="flex flex-col">
-              <h2 className="text-white text-[16px] font-[500] pb-[2px]">
-                Github
-              </h2>
+              <a href="https://github.com/muzaffarovhayotbek">
+                <h2 className="text-white text-[16px] font-[500] pb-[2px]">
+                  Github
+                </h2>
+              </a>
               <p className="text-[#FFFFFFB2] text-[14px] font-[400]">
                 github.com/muzaffarovhayotbek
               </p>
@@ -46,9 +46,11 @@ function LeftBar() {
           <div className="flex gap-[10px] pt-[14px]">
             <img src={telegram} alt="telegram" width={44} />
             <div className="flex flex-col">
-              <h2 className="text-white text-[16px] font-[500] pb-[2px]">
-                Telegram
-              </h2>
+              <a href="https://t.me/muzaffarvchch">
+                <h2 className="text-white text-[16px] font-[500] pb-[2px]">
+                  Telegram
+                </h2>
+              </a>
               <p className="text-[#FFFFFFB2] text-[14px] font-[400]">
                 t.me/muzaffarvchch
               </p>
