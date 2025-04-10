@@ -4,6 +4,7 @@ import MainLayout from './layout/MainLayout';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
+import ErrorPage from './pages/Error/ErrorPage';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
             </MainLayout>
           }
         ></Route>
+        <Route path="*" element={<ErrorPage />}></Route>
       </Routes>
     </div>
   );

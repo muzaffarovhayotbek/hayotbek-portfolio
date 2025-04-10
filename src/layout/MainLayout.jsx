@@ -7,7 +7,7 @@ import LeftBar from '../components/LeftBar';
 function MainLayout({ children }) {
   return (
     <div className="flex flex-col min-h-screen">
-      {/* <LeftBar /> */}
+      <LeftBar />
       <header className="pt-[8px] pb-[8px] bg-[#1B1B1B] pl-[14px] pr-[14px]">
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center gap-[14px]">
@@ -48,9 +48,9 @@ function MainLayout({ children }) {
 
       <main className="flex-grow">{children}</main>
 
-      {/* <footer className="bg-[#1B1B1B] text-white text-center py-2">
+       <footer className="bg-[#1B1B1B] text-white text-center py-2">
         <h2>HAYOTBEK.UZ</h2>
-      </footer> */}
+      </footer>
     </div>
   );
 }
