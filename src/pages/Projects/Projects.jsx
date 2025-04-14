@@ -63,7 +63,7 @@ function Projects() {
             <img
               src={project.image}
               alt={project.title || 'Project image'}
-              className="w-full h-48 object-cover hover:scale-105 transition-transform"
+              className="w-full h-48 object-cover hover:scale-105 transition-transform cursor-pointer"
             />
             <div className="p-4">
               <h3 className="text-xl font-semibold text-white mb-2">
