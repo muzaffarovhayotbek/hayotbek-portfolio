@@ -7,7 +7,7 @@ import LeftBar from '../components/LeftBar';
 function MainLayout({ children }) {
   return (
     <div className="flex min-h-dvh flex-row">
-      {/* <LeftBar /> */}
+      <LeftBar />
 
       <div className="flex flex-col flex-grow">
         <header className="pt-[8px] pb-[8px] bg-[#1B1B1B] pl-[14px] pr-[14px]">
