@@ -28,7 +28,7 @@ function Contact() {
 
         <div className="flex flex-col items-center w-[290.67px] h-[190px] rounded-[12px] pt-[28px] pb-[28px] border-[1px] border-[#1B1B1B] bg-[#1B1B1B]">
           <img src={telegram} alt="" width={64} />
-          <a href="https://t.me/muzaffarvchch">
+          <a href="https://t.me/muzaffarvchch" target="_blank" rel='noopener noreferrer'>
             <h2 className="text-[20px] text-[#FFFFFF] pt-[8px]">Telegram</h2>
           </a>
           <p className="text-[16px] text-[#FFFFFFB2] pt-[8px]">
@@ -42,7 +42,7 @@ function Contact() {
             alt="gmil"
             className="w-[64px]  object-contain rounded-[6px]"
           />
-          <a href="https://github.com/muzaffarovhayotbek">
+          <a href="https://github.com/muzaffarovhayotbek" target="_blank" rel='noopener noreferrer'>
             <h4 className="w-[96px] text-white text-[20px] pt-[8px]">Github</h4>
           </a>
           <p className="text-[16px] text-[#FFFFFFB2] pt-[8px]">
@@ -52,7 +52,7 @@ function Contact() {
 
         <div className="flex flex-col items-center text-center w-[290.67px] h-[190px] rounded-[12px] pt-[28px] pb-[28px] border-[1px] border-[#1B1B1B] bg-[#1B1B1B]">
           <GrInstagram className="w-[64px] h-[64px] text-white object-cover" />
-          <a href="https://www.instagram.com/muzaffarvch_mr">
+          <a href="https://www.instagram.com/muzaffarvch_mr" target="_blank" rel='noopener noreferrer'>
             <h4 className="w-[96px] text-white text-[20px] pt-[8px]">
               Instagram
             </h4>
