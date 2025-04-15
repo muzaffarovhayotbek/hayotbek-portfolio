@@ -10,19 +10,19 @@ import sass from '../../assets/sass.png';
 function About() {
   return (
     <div className="flex flex-col items-center container mx-auto">
-      <div className=" mt-[32px] w-[912px] pl-[20px] sm:mt-[28px] sm:w-[780px] sm:pl-[18px]">
-        <h2 className="text-[32px]  text-[#FFFFFF] sm:text-[28px]">
+      <div className=" md:mt-[32px] w-[912px] pl-[20px] sm:mt-[28px] sm:w-[780px] sm:pl-[18px]">
+        <h2 className="text-[32px]  text-[#FFFFFF] md:text-[30px] sm:text-[28px]">
           Men haqimda
         </h2>
-        <h3 className="w-[112px] bg-[#39965F] h-2 rounded-[10px] sm:w-[100px] sm:h-1 sm:rounded-[8px] "></h3>
-        <div className="flex flex-col gap-4 w-[912px] sm:w-[890px] sm:gap-2">
-          <p className="w-[912px] text-[18px] pt-[24px] font-[400]  tracking-[0px] font-['Poppins']  text-[#FFFFFFB2] sm:w-[890px] sm:text-[17px] sm:pt-[20px]">
+        <h3 className="w-[112px] bg-[#39965F] h-2 rounded-[10px] md:w-[105px] sm:w-[100px] sm:h-1 sm:rounded-[8px] "></h3>
+        <div className="flex flex-col gap-4 w-[912px] md:w-[890px] sm:w-[820px] sm:gap-2">
+          <p className="w-[912px] text-[18px] pt-[24px] font-[400]  tracking-[0px] font-['Poppins']  text-[#FFFFFFB2] md:w-[900px] sm:w-[890px] sm:text-[17px] sm:pt-[20px]">
             Men Muzaffarov Hayotbek veb dasturchisiman. Yoshim 16 da, Farg'ona
             viloyati Farg'ona shahrida tug'ilganman. Qiziqarli, ko’p
             funksionallika ega bo’lgan va kuchli dizaynga ega bo’lgan dasturlar
             yaratishga qiziqaman.
           </p>
-          <p className="w-[912px] text-[18px] pt-[24px] font-[400]  tracking-[0px] font-['Poppins']  text-[#FFFFFFB2] sm:w-[890px] sm:text-[17px] sm:pt-[20px]">
+          <p className="w-[912px] text-[18px] pt-[24px] font-[400]  tracking-[0px] font-['Poppins']  text-[#FFFFFFB2] md:w-[900px] sm:w-[890px] sm:text-[17px] sm:pt-[20px]">
             Mening vazifam veb saytni foydalanuvchilarga qulay, sayt dizayni
             foydalanuvchilarga jalb qiluvchi lekin ayni paytda tezkor bo'lishini
             taminlashdir va saytni moslashuvchan kodlar bilan yaratishdir!
