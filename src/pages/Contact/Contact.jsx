@@ -7,13 +7,18 @@ import { GrInstagram } from 'react-icons/gr';
 function Contact() {
   return (
     <div className="flex flex-col items-center container mx-auto">
-      <div className="w-[912px] pl-[20px]">
-        <h2 className="text-[32px] pb-[12px] pt-[32px] text-[#FFFFFF]">
+      <div className="w-full px-5 sm:px-12 max-w-[912px]">
+        <h2 className="text-[28px] sm:text-[32px] text-center text-[#FFFFFF] pt-[28px] sm:pt-[32px] pb-[8px] sm:pb-[12px]">
           Bog’lanish
         </h2>
-        <h3 className="w-[112px] bg-[#39965F] h-2 rounded-[10px] "></h3>
+        <h3 className="w-[100px] sm:w-[112px] h-1 sm:h-2 bg-[#39965F] rounded-[8px] sm:rounded-[10px] mx-auto"></h3>
       </div>
-      <div className="flex items-center gap-[20px] pl-[20px] pt-[24px] mt-[24px] flex-wrap pr-[20px]">
+
+      <div
+        className="flex flex-wrap items-center justify-center gap-[20px] pl-[20px] pr-[20px] pt-[24px] mt-[24px] pb-[20px] 
+  sm:flex-col sm:items-center sm:gap-[18px] sm:pl-[18px] sm:pt-[16px] sm:mt-[18px] sm:pb-[20px]
+  md:flex-row md:items-start md:gap-[24px] md:pl-[24px] md:pt-[20px] md:mt-[20px]"
+      >
         <div className="flex flex-col items-center w-[290.67px] h-[190px] rounded-[12px] pt-[28px] pb-[28px] border-[1px] border-[#1B1B1B] bg-[#1B1B1B]">
           <img
             src={gmail}
@@ -28,7 +33,11 @@ function Contact() {
 
         <div className="flex flex-col items-center w-[290.67px] h-[190px] rounded-[12px] pt-[28px] pb-[28px] border-[1px] border-[#1B1B1B] bg-[#1B1B1B]">
           <img src={telegram} alt="" width={64} />
-          <a href="https://t.me/muzaffarvchch" target="_blank" rel='noopener noreferrer'>
+          <a
+            href="https://t.me/muzaffarvchch"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <h2 className="text-[20px] text-[#FFFFFF] pt-[8px]">Telegram</h2>
           </a>
           <p className="text-[16px] text-[#FFFFFFB2] pt-[8px]">
@@ -42,7 +51,11 @@ function Contact() {
             alt="gmil"
             className="w-[64px]  object-contain rounded-[6px]"
           />
-          <a href="https://github.com/muzaffarovhayotbek" target="_blank" rel='noopener noreferrer'>
+          <a
+            href="https://github.com/muzaffarovhayotbek"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <h4 className="w-[96px] text-white text-[20px] pt-[8px]">Github</h4>
           </a>
           <p className="text-[16px] text-[#FFFFFFB2] pt-[8px]">
@@ -52,7 +65,11 @@ function Contact() {
 
         <div className="flex flex-col items-center text-center w-[290.67px] h-[190px] rounded-[12px] pt-[28px] pb-[28px] border-[1px] border-[#1B1B1B] bg-[#1B1B1B]">
           <GrInstagram className="w-[64px] h-[64px] text-white object-cover" />
-          <a href="https://www.instagram.com/muzaffarvch_mr" target="_blank" rel='noopener noreferrer'>
+          <a
+            href="https://www.instagram.com/muzaffarvch_mr"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <h4 className="w-[96px] text-white text-[20px] pt-[8px]">
               Instagram
             </h4>
