@@ -8,7 +8,8 @@ function Contact() {
   return (
     <div className="flex flex-col items-center container mx-auto">
       <div className="w-full px-5 sm:px-12 max-w-[912px]">
-     <h2 className="
+        <h2
+          className="
   text-[28px] 
   sm:text-[32px] 
   md:text-[36px] 
@@ -19,9 +20,10 @@ function Contact() {
   pb-[8px] 
   sm:pb-[12px] 
   md:pb-[16px]
-">
-  Bog’lanish
-</h2>
+"
+        >
+          Bog’lanish
+        </h2>
 
         <h3 className="w-[100px] sm:w-[112px] h-1 sm:h-2 bg-[#39965F] rounded-[8px] sm:rounded-[10px] "></h3>
       </div>
@@ -50,9 +52,9 @@ function Contact() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className="text-[20px] text-[#FFFFFF] pt-[8px]">Telegram</h2>
+            <h2 className="text-[20px] text-[#FFFFFF] pt-[8px] ">Telegram</h2>
           </a>
-          <p className="text-[16px] text-[#FFFFFFB2] pt-[8px]">
+          <p className="text-[16px] text-[#FFFFFFB2] pt-[8px] cursor-pointer hover:underline">
             https://t.me/muzaffarvchch
           </p>
         </div>

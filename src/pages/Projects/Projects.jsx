@@ -4,6 +4,8 @@ import unsplash from '../../assets/unsplash.png';
 import uzum from '../../assets/uzum.webp';
 import valyuta from '../../assets/valuta.webp';
 import companyName from '../../assets/company-name.webp';
+import telegram from '../../assets/telegramMe.svg';
+import megaphone from '../../assets/megaphone.png';
 
 const projects = [
   {
@@ -28,7 +30,7 @@ const projects = [
     title: 'Freshnesecom',
     description: 'Freshnesecom project',
     vercel: 'https://4dars-jamoviy-proekt.vercel.app/',
-    image: 'https://via.placeholder.com/300x200',  // fallback rasm
+    image: 'https://via.placeholder.com/300x200', // fallback rasm
   },
   {
     title: 'Company name',
@@ -41,7 +43,7 @@ const projects = [
     description: 'Valyuta Konverteri project',
     vercel: 'https://6-oy-7-dars-vazifasi-sepia.vercel.app/',
     image: valyuta,
-  }
+  },
 ];
 
 function Projects() {
@@ -54,16 +56,16 @@ function Projects() {
         <div className="w-28 bg-green-600 h-2 rounded-lg mt-2"></div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+      <div className="flex flex-wrap justify-center gap-6">
         {projects.map((project) => (
           <div
             key={project.title}
-            className="bg-[#1F2937] rounded-2xl overflow-hidden shadow-lg max-w-sm w-full mx-auto hover:shadow-xl transition-shadow"
+            className="bg-[#1F2937] rounded-2xl overflow-hidden shadow-lg w-full sm:w-[47%] lg:w-[30%] max-w-sm mx-auto hover:shadow-xl transition-shadow"
           >
             <img
               src={project.image}
               alt={project.title || 'Project image'}
-              className="w-full h-48 object-cover hover:scale-105 transition-transform cursor-pointer"
+              className="w-full h-48 object-cover transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer"
             />
             <div className="p-4">
               <h3 className="text-xl font-semibold text-white mb-2">
@@ -83,6 +85,37 @@ function Projects() {
             </div>
           </div>
         ))}
+      </div>
+
+      <div className="w-[912px] mt-[64px] mb-[32px] flex gap-[20px] border-2 p-[20px] border-[#FFFFFF40] bg-[#1B1B1B] rounded-[12px]">
+        <div className="w-[168px]">
+          <img src={telegram} alt="telegram" width={168} />
+        </div>
+        <div className="w-[406px]">
+          <h2 className="text-[28px] pb-[12px] leading-[100%] text-white font-[700]">
+            Telegram kanal
+          </h2>
+          <p className="w-[406px] text-[18px] pb-[12px] font-[400] pt-[12px] text-[#FFFFFFB2]">
+            Barcha loyihalarimni telegram kanalimda ham kuzatib borishingiz
+            mumkin!
+          </p>
+          <button className="pt-[10px] pb-[10px] pl-[24px] pr-[24px] bg-[#39965F] rounded-[8px] gap-[10px] text-[18px] text-[#FFFFFF] font-[400]">
+            <a
+              href="https://t.me/muzaffarvch_mr"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ta’shrif buyurish
+            </a>
+          </button>
+        </div>
+        <div>
+          <img
+            src={megaphone}
+            alt="megaphone"
+            className="w-[206.43px] rotate-[12deg]"
+          />
+        </div>
       </div>
     </div>
   );

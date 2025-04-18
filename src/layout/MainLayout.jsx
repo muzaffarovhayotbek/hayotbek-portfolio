@@ -6,12 +6,9 @@ import { Link, NavLink } from 'react-router-dom';
 function MainLayout({ children }) {
   return (
     <div className="flex min-h-screen flex-row">
-
       <div className="flex flex-col flex-grow">
         <header className="pt-2 pb-2 bg-[#1B1B1B] px-4 sm:pt-1 sm:pb-1 sm:px-3">
-        <div className="container mx-auto flex items-center justify-between flex-col sm:flex-col md:flex-row">
-
-
+          <div className="container mx-auto flex items-center justify-between flex-col sm:flex-col md:flex-row">
             <div className="flex items-center gap-4 sm:gap-2">
               <img
                 src={left}

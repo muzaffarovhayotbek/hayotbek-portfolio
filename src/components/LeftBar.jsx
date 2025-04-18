@@ -3,20 +3,35 @@ import photo from '../assets/photo.jpg';
 import gmail from '../assets/gmail.svg';
 import github from '../assets/gitHub.png';
 import telegram from '../assets/telegram.svg';
+import left from '../assets/leftIcon.svg';
+import right from '../assets/right.svg';
 
 function LeftBar() {
   return (
-    <div className="w-[288px] min-h-dvh bg-black">
-      <div className="pl-[14px] pt-14">
-        <img src={photo} alt="profile" width={259} />
+    <div className="w-[288px]  bg-black">
+      <div className="flex items-center gap-[14px] mt-[8px]">
+        <img src={left} alt="left" />
+        <img src={right} alt="right" />
+      </div>
+      <h3 className="w-full pt-[14px] border-b border-[#FFFFFF40]"></h3>
+
+      <div className="w-[287px] pl-[14px] pt-14">
+        <img
+          src={photo}
+          alt="profile"
+          width={259}
+          className="w-[259px] rounded-[10px]"
+        />
         <h2 className="text-[18px] text-[#FFFFFF] pt-4">Hayotbek M.</h2>
-        <div className="flex items-center gap-[10px] pl-[14px] mt-[8px] flex-wrap">
-          <button className="p-2 bg-[#FFFFFF1A] rounded-[8px]">
+        <div className="flex items-center gap-[10px]  mt-[8px] flex-wrap">
+          <button className="p-2 bg-[#FFFFFF1A] rounded-[8px] text-white">
             Web dasturchi
           </button>
-          <button className="p-2 bg-[#FFFFFF1A] rounded-[8px]">Odam</button>
-          <button className="p-2 bg-[#FFFFFF1A] rounded-[8px]">Dizayner</button>
+          <button className="p-2 bg-[#FFFFFF1A] rounded-[8px] text-white">
+            Dizayner
+          </button>
         </div>
+
         <div className="w-full pt-[14px] border-b border-[#FFFFFF40]"></div>
         <div className="flex flex-col gap-[15px] mt-[15.5px] w-[171px]">
           <div className="flex gap-[10px]">
