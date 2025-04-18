@@ -64,7 +64,6 @@ function About() {
             </div>
 
             <div className="flex flex-col items-center w-[213px] h-[124px] rounded-[12px] gap-[14px] p-[20px] bg-[#1B1B1B] border border-[#FFFFFF40]">
-              {/* <img src={FaSass} alt="sass" className="w-[64px] object-cover" /> */}
 
               <FaSass className='w-[64px] object-cover  h-[64px] text-pink-500'/>
             </div>
@@ -76,7 +75,7 @@ function About() {
         </div>
 
         <div className="w-[912px] mt-[64px] mb-[64px]">
-          <h2 className="text-[28px] text-white leading-[100%] font-[700] text-[#FFFFFF]">
+          <h2 className="text-[28px] leading-[100%] font-[700] text-[#FFFFFF]">
             Men nimalar qila olaman
           </h2>
           <h3 className='w-[112px] bg-[#39965F] h-2 rounded-[10px] mt-[8px] mb-[24px] '></h3>
