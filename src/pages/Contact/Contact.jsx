@@ -39,7 +39,12 @@ function Contact() {
             alt="gmil"
             className="w-[64px]  object-contain rounded-[6px]"
           />
-          <h4 className="w-[96px] text-white text-[20px] pt-[8px]">E-pochta</h4>
+          <a href="mailto:hmuzfrov@gmail.com">
+            <h4 className="w-[96px] text-white text-[20px] pt-[8px]">
+              E-pochta
+            </h4>
+          </a>
+
           <p className="text-[16px] text-[#FFFFFFB2] pt-[8px]">
             hmuzfrov@gmail.com
           </p>

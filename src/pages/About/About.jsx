@@ -10,7 +10,7 @@ import { FaSass } from "react-icons/fa";
 
 function About() {
   return (
-    <div className="flex flex-col items-center container mx-auto">
+    <div className="flex flex-col items-center container mx-auto bg-black">
       <div className=" md:mt-[32px] w-[912px] pl-[20px] sm:mt-[28px] sm:w-[780px] sm:pl-[18px]">
         <h2 className="text-[32px]  text-[#FFFFFF] md:text-[30px] sm:text-[28px]">
           Men haqimda

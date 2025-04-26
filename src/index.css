@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 
-body {
+/* body {
   background-image: url('./assets/body-bg.svg');
   background-size: cover;
   background-position: center;
@@ -10,4 +10,9 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+} */
+
+
+body{
+  background-color: black;
 }
