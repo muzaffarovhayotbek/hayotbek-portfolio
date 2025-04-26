@@ -117,7 +117,7 @@ function MainLayout({ children }) {
             <ul className="flex flex-col p-4 gap-4 text-white sm:text-[16px]">
               <li>
                 <NavLink
-                  to="/"
+                  to="/" 
                   onClick={closeMenu}
                   className={({ isActive }) =>
                     `flex items-center gap-2 ${
