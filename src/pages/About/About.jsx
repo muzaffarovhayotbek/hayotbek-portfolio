@@ -6,7 +6,8 @@ import js from '../../assets/js.svg';
 import react from '../../assets/react.svg';
 import tailwend from '../../assets/tailwind.svg';
 import sass from '../../assets/sass.png';
-import { FaSass } from "react-icons/fa";
+import { FaSass } from 'react-icons/fa';
+import figma from '../../assets/figma.png';
 
 function About() {
   return (
@@ -31,9 +32,7 @@ function About() {
             Mening maqsadim veb sayt foydalanuvchilariga barcha qismlarini
             intuitiv va qulay bo'lishga harakat qilishga qaratilgan. Agar sizga
             men yaratgan loyihalarim qiziq bo’lsa{' '}
-            <span className="text-[#39965F] font-semibold">
-              Loyihalar
-            </span>{' '}
+            <span className="text-[#39965F] font-semibold">Loyihalar</span>{' '}
             sahifasiga tashrif buyurishingiz mumkin :)
           </p>
         </div>
@@ -43,27 +42,37 @@ function About() {
         </button>
 
         <div className="mt-12">
-          <h2 className="text-2xl text-white font-bold">Asbob-uskunalar</h2>
+          <h2 className="text-2xl text-white font-bold">Texnologiyalar</h2>
           <h3 className="w-[112px] bg-[#39965F] h-2 rounded-[10px] mt-2 mb-6"></h3>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+          <div className="flex flex-wrap justify-center gap-6">
             <div className="flex flex-col items-center p-4 bg-[#1B1B1B] rounded-lg border border-[#FFFFFF40]">
               <img src={html} alt="html" className="w-16 h-16" />
+              <h2 className="text-white">Html</h2>
             </div>
             <div className="flex flex-col items-center p-4 bg-[#1B1B1B] rounded-lg border border-[#FFFFFF40]">
               <img src={css} alt="css" className="w-16 h-16" />
+              <h2 className="text-white">Css</h2>
             </div>
             <div className="flex flex-col items-center p-4 bg-[#1B1B1B] rounded-lg border border-[#FFFFFF40]">
               <img src={js} alt="js" className="w-16 h-16" />
+              <h2 className="text-white">JavaScript</h2>
             </div>
             <div className="flex flex-col items-center p-4 bg-[#1B1B1B] rounded-lg border border-[#FFFFFF40]">
               <img src={react} alt="react" className="w-16 h-16" />
+              <h2 className="text-white">React js</h2>
             </div>
             <div className="flex flex-col items-center p-4 bg-[#1B1B1B] rounded-lg border border-[#FFFFFF40]">
               <FaSass className="text-pink-500 w-16 h-16" />
+              <h2 className="text-white">Sass</h2>
             </div>
             <div className="flex flex-col items-center p-4 bg-[#1B1B1B] rounded-lg border border-[#FFFFFF40]">
               <img src={tailwend} alt="tailwind" className="w-16 h-16" />
+              <h2 className="text-white text-sm font-medium">Tailwind.css</h2>
+            </div>
+            <div className="flex flex-col items-center p-4 bg-[#1B1B1B] rounded-lg border border-[#FFFFFF40]">
+              <img src={figma} alt="figma" className="w-16 h-16" />
+              <h2 className="text-white text-sm font-medium pt-1">Figma</h2>
             </div>
           </div>
         </div>
