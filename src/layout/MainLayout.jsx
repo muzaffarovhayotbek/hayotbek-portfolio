@@ -28,21 +28,67 @@ function MainLayout({ children }) {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="pt-2 pb-2 bg-[#1B1B1B] sm:pt-1.5 sm:pb-1.5 sm:pr-2">
+      <header className="pt-2 pb-2 bg-[#1B1B1B] sm:pt-1.5 sm:pb-1.5 sm:pr-2 relative">
         <div className="container mx-auto flex items-center justify-between">
+          {/* Chap tomonda Logo */}
           <div className="flex items-center gap-4 sm:gap-2">
             <Link
               to="/"
               className="text-[22px] text-white leading-7 sm:text-[18px]"
               onClick={closeMenu}
             >
-              HAYOTBEK.
-              <span className="text-[#39965F]">UZ</span>
+              HAYOTBEK.<span className="text-[#39965F]">UZ</span>
             </Link>
+          </div>
+
+          {/* O'ng tomonda NavLinks + GitHub + Left icon */}
+          <div className="flex items-center gap-6 sm:gap-2">
+            {/* NavLinks - faqat md va undan katta */}
+            <nav className="hidden md:flex items-center gap-6">
+              <NavLink
+                to="/"
+                onClick={closeMenu}
+                className={({ isActive }) =>
+                  isActive ? 'text-[#39965F]' : 'hover:text-[#39965F] text-white'
+                }
+              >
+                Bosh sahifa
+              </NavLink>
+              <NavLink
+                to="/about"
+                onClick={closeMenu}
+                className={({ isActive }) =>
+                  isActive ? 'text-[#39965F]' : 'hover:text-[#39965F] text-white'
+                }
+              >
+                Haqida
+              </NavLink>
+              <NavLink
+                to="/projects"
+                onClick={closeMenu}
+                className={({ isActive }) =>
+                  isActive ? 'text-[#39965F]' : 'hover:text-[#39965F] text-white'
+                }
+              >
+                Loyihalar
+              </NavLink>
+            </nav>
+
+            {/* GitHub icon - faqat md va katta */}
+            <a
+              href="https://github.com/muzaffarovhayotbek"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden md:block hover:opacity-80 transition-all"
+            >
+              <img src={github} alt="GitHub" width={32} />
+            </a>
+
+            {/* Left icon - faqat sm */}
             <button
               onClick={toggleMenu}
               aria-label={isMenuOpen ? 'Yopish' : 'Ochish'}
-              className="md:hidden p-1"
+              className="block md:hidden p-1"
             >
               {isMenuOpen ? (
                 <IoMdClose className="w-8 h-8 text-white" />
@@ -51,78 +97,23 @@ function MainLayout({ children }) {
               )}
             </button>
           </div>
-
-          <ul className="hidden md:flex items-center gap-6 text-[18px] text-white sm:text-[16px]">
-            <li>
-              <NavLink
-                to="/"
-                onClick={closeMenu}
-                className={({ isActive }) =>
-                  isActive ? 'text-[#39965F]' : 'hover:text-[#39965F]'
-                }
-              >
-                Bosh sahifa
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/about"
-                onClick={closeMenu}
-                className={({ isActive }) =>
-                  isActive ? 'text-[#39965F]' : 'hover:text-[#39965F]'
-                }
-              >
-                Haqida
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/projects"
-                onClick={closeMenu}
-                className={({ isActive }) =>
-                  isActive ? 'text-[#39965F]' : 'hover:text-[#39965F]'
-                }
-              >
-                Loyihalar
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/contact"
-                onClick={closeMenu}
-                className={({ isActive }) =>
-                  isActive ? 'text-[#39965F]' : 'hover:text-[#39965F]'
-                }
-              >
-                Bog'lanish
-              </NavLink>
-            </li>
-          </ul>
-
-          <a
-            href="https://github.com/muzaffarovhayotbek"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:opacity-80 transition-all"
-          >
-            <img src={github} alt="GitHub" width={32} />
-          </a>
         </div>
 
+        {/* sm: menyu ochilganda chiqadigan */}
         {isMenuOpen && (
           <div
             ref={menuRef}
-            className="absolute left-0 top-14 bg-[#1B1B1B] w-full shadow-lg z-50 border border-gray-700"
+            className="absolute left-0 top-14 bg-[#1B1B1B] w-full shadow-lg z-50 border-t border-gray-700"
           >
             <ul className="flex flex-col p-4 gap-4 text-white sm:text-[16px]">
               <li>
                 <NavLink
-                  to="/" 
+                  to="/"
                   onClick={closeMenu}
                   className={({ isActive }) =>
-                    `flex items-center gap-2 ${
-                      isActive ? 'text-[#39965F]' : 'hover:text-[#39965F]'
-                    }`
+                    isActive
+                      ? 'flex items-center gap-2 text-[#39965F]'
+                      : 'flex items-center gap-2 hover:text-[#39965F] text-white'
                   }
                 >
                   <FaHome className="w-5 h-5" />
@@ -134,9 +125,9 @@ function MainLayout({ children }) {
                   to="/about"
                   onClick={closeMenu}
                   className={({ isActive }) =>
-                    `flex items-center gap-2 ${
-                      isActive ? 'text-[#39965F]' : 'hover:text-[#39965F]'
-                    }`
+                    isActive
+                      ? 'flex items-center gap-2 text-[#39965F]'
+                      : 'flex items-center gap-2 hover:text-[#39965F] text-white'
                   }
                 >
                   <FcAbout className="w-5 h-5" />
@@ -148,9 +139,9 @@ function MainLayout({ children }) {
                   to="/projects"
                   onClick={closeMenu}
                   className={({ isActive }) =>
-                    `flex items-center gap-2 ${
-                      isActive ? 'text-[#39965F]' : 'hover:text-[#39965F]'
-                    }`
+                    isActive
+                      ? 'flex items-center gap-2 text-[#39965F]'
+                      : 'flex items-center gap-2 hover:text-[#39965F] text-white'
                   }
                 >
                   <GrProjects className="w-5 h-5" />
@@ -162,9 +153,9 @@ function MainLayout({ children }) {
                   to="/contact"
                   onClick={closeMenu}
                   className={({ isActive }) =>
-                    `flex items-center gap-2 ${
-                      isActive ? 'text-[#39965F]' : 'hover:text-[#39965F]'
-                    }`
+                    isActive
+                      ? 'flex items-center gap-2 text-[#39965F]'
+                      : 'flex items-center gap-2 hover:text-[#39965F] text-white'
                   }
                 >
                   <MdContacts className="w-5 h-5" />
