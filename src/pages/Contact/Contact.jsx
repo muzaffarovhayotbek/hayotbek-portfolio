@@ -59,10 +59,11 @@ function Contact() {
           >
             <h2 className="text-[20px] text-[#FFFFFF] pt-[8px] ">Telegram</h2>
           </a>
-          <p className="text-[16px] text-[#FFFFFFB2] pt-[8px] cursor-pointer hover:underline">
+          <p className="text-[16px] text-[#FFFFFFB2] pt-[8px] ">
             https://t.me/muzaffarvchch
           </p>
         </div>
+        
 
         <div className="flex flex-col items-center text-center w-[290.67px] h-[190px] rounded-[12px] pt-[28px] pb-[28px] border-[1px] border-[#1B1B1B] bg-[#1B1B1B]">
           <img

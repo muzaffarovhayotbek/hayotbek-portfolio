@@ -5,7 +5,6 @@ import css from '../../assets/css.svg';
 import js from '../../assets/js.svg';
 import react from '../../assets/react.svg';
 import tailwend from '../../assets/tailwind.svg';
-import sass from '../../assets/sass.png';
 import { FaSass } from 'react-icons/fa';
 import figma from '../../assets/figma.png';
 
@@ -37,7 +36,7 @@ function About() {
           </p>
         </div>
 
-        <button className="bg-[#39965F] mt-6 py-3 px-8 rounded-lg text-white text-lg font-medium">
+        <button className="bg-[#39965F] mt-6 py-3 px-8 rounded-lg text-white text-[18px] font-medium">
           <NavLink to="/contact">Bog’lanish</NavLink>
         </button>
 

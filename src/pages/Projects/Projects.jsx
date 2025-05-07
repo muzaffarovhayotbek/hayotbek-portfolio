@@ -1,9 +1,5 @@
 import React from 'react';
-import bitcoin from '../../assets/bitcoin.jpg';
 import unsplash from '../../assets/unsplash.png';
-import uzum from '../../assets/uzum.webp';
-import valyuta from '../../assets/valuta.webp';
-import companyName from '../../assets/company-name.webp';
 import telegram from '../../assets/telegramMe.svg';
 import megaphone from '../../assets/megaphone.png';
 import github from '../../assets/github.svg';
@@ -22,8 +18,10 @@ function Projects() {
   return (
     <div className="flex flex-col items-center container mx-auto px-4 py-10">
       <div className="mb-8 w-full">
-        <h2 className="text-3xl sm:text-2xl font-bold text-white">Loyihalar</h2>
-        <div className="w-28 h-2 bg-green-600 rounded-lg mt-2"></div>
+        <h2 className="text-3xl sm:text-2xl font-bold text-white text-center">
+          Loyihalar
+        </h2>
+        <div className="w-28 h-2 bg-green-600 rounded-lg mt-2 mx-auto "></div>
       </div>
 
       <div className="flex flex-wrap gap-6 justify-center w-full relative">
@@ -59,12 +57,12 @@ function Projects() {
                 </a>
                 <a
                   href={project.vercel}
-                  className="flex items-center gap-2 mt-2"
+                  className="flex items-center text-center gap-2 mt-2"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img
-                    className="w-5.5 h-5.5"
+                    className="w-5 h-5"
                     src={website}
                     alt="website icon"
                   />
@@ -76,7 +74,6 @@ function Projects() {
         ))}
       </div>
 
-      {/* Telegram Section */}
       <div className="flex flex-col lg:flex-row items-center justify-between bg-[#1B1B1B] border-2 border-[#FFFFFF40] rounded-2xl p-6 mt-16 w-full max-w-5xl gap-6">
         <img src={telegram} alt="Telegram" className="w-40" />
 

@@ -3,7 +3,6 @@ import left from '../assets/left.svg';
 import github from '../assets/github.svg';
 import { Link, NavLink } from 'react-router-dom';
 import { IoMdClose } from 'react-icons/io';
-import './layout.css';
 import { FaHome } from 'react-icons/fa';
 import { FcAbout } from 'react-icons/fc';
 import { GrProjects } from 'react-icons/gr';
@@ -30,8 +29,7 @@ function MainLayout({ children }) {
     <div className="flex flex-col min-h-screen">
       <header className="pt-2 pb-2 bg-[#1B1B1B] sm:pt-1.5 sm:pb-1.5 sm:pr-2 relative">
         <div className="container mx-auto flex items-center justify-between">
-          {/* Chap tomonda Logo */}
-          <div className="flex items-center gap-4 sm:gap-2">
+          <div className="flex items-center gap-4 sm:gap-2 p-1.5">
             <Link
               to="/"
               className="text-[22px] text-white leading-7 sm:text-[18px]"
@@ -41,9 +39,7 @@ function MainLayout({ children }) {
             </Link>
           </div>
 
-          {/* O'ng tomonda NavLinks + GitHub + Left icon */}
           <div className="flex items-center gap-6 sm:gap-2">
-            {/* NavLinks - faqat md va undan katta */}
             <nav className="hidden md:flex items-center gap-6">
               <NavLink
                 to="/"
@@ -74,7 +70,6 @@ function MainLayout({ children }) {
               </NavLink>
             </nav>
 
-            {/* GitHub icon - faqat md va katta */}
             <a
               href="https://github.com/muzaffarovhayotbek"
               target="_blank"
@@ -84,7 +79,6 @@ function MainLayout({ children }) {
               <img src={github} alt="GitHub" width={32} />
             </a>
 
-            {/* Left icon - faqat sm */}
             <button
               onClick={toggleMenu}
               aria-label={isMenuOpen ? 'Yopish' : 'Ochish'}
@@ -99,11 +93,10 @@ function MainLayout({ children }) {
           </div>
         </div>
 
-        {/* sm: menyu ochilganda chiqadigan */}
         {isMenuOpen && (
           <div
             ref={menuRef}
-            className="absolute left-0 top-14 bg-[#1B1B1B] w-full shadow-lg z-50 border-t border-gray-700"
+            className="absolute left-0 top-12 bg-[#1B1B1B] w-full shadow-lg z-50 border-t border-gray-700"
           >
             <ul className="flex flex-col p-4 gap-4 text-white sm:text-[16px]">
               <li>
