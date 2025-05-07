@@ -1,12 +1,11 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import MainLayout from './layout/MainLayout';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import ErrorPage from './pages/Error/ErrorPage';
 import Projects from './pages/Projects/Projects';
-
+import MainLayout from './layout/MainLayout';
 function App() {
   return (
     <div>
@@ -35,7 +34,14 @@ function App() {
             </MainLayout>
           }
         ></Route>
-        <Route path='/projects' element = {<MainLayout><Projects/></MainLayout>}></Route>
+        <Route
+          path="/projects"
+          element={
+            <MainLayout>
+              <Projects />
+            </MainLayout>
+          }
+        ></Route>
         <Route path="*" element={<ErrorPage />}></Route>
       </Routes>
     </div>

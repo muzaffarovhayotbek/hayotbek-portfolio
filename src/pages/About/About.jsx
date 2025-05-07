@@ -18,13 +18,13 @@ function About() {
         <h3 className="w-[112px] bg-[#39965F] h-2 rounded-[10px] mt-2 mb-4"></h3>
 
         <div className="flex flex-col gap-4">
-          <p className="text-lg text-[#FFFFFFB2] leading-relaxed">
+          <p className="text-lg text-[#FFFFFFB2] leading-relaxed duration-300 hover:text-blue-400">
             Men Muzaffarov Hayotbek veb dasturchisiman. Yoshim 16 da, Farg'ona
             viloyati Farg'ona shahrida tug'ilganman. Qiziqarli, ko’p
             funksionallika ega bo’lgan va kuchli dizaynga ega bo’lgan dasturlar
             yaratishga qiziqaman.
           </p>
-          <p className="text-lg text-[#FFFFFFB2] leading-relaxed">
+          <p className="text-lg text-[#FFFFFFB2] leading-relaxed duration-300 hover:text-blue-400">
             Mening vazifam veb saytni foydalanuvchilarga qulay, sayt dizayni
             foydalanuvchilarga jalb qiluvchi lekin ayni paytda tezkor bo'lishini
             taminlashdir va saytni moslashuvchan kodlar bilan yaratishdir!
@@ -36,7 +36,7 @@ function About() {
           </p>
         </div>
 
-        <button className="bg-[#39965F] mt-6 py-3 px-8 rounded-lg text-white text-[18px] font-medium">
+        <button className="bg-[#39965F] mt-6 py-3 px-8 rounded-lg text-white text-[18px] font-medium duration-300 hover:bg-[#231091] cursor-pointer">
           <NavLink to="/contact">Bog’lanish</NavLink>
         </button>
 

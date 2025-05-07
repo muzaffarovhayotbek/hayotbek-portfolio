@@ -45,7 +45,9 @@ function MainLayout({ children }) {
                 to="/"
                 onClick={closeMenu}
                 className={({ isActive }) =>
-                  isActive ? 'text-[#39965F]' : 'hover:text-[#39965F] text-white'
+                  isActive
+                    ? 'text-[#39965F]'
+                    : 'hover:text-[#39965F] text-white'
                 }
               >
                 Bosh sahifa
@@ -54,7 +56,9 @@ function MainLayout({ children }) {
                 to="/about"
                 onClick={closeMenu}
                 className={({ isActive }) =>
-                  isActive ? 'text-[#39965F]' : 'hover:text-[#39965F] text-white'
+                  isActive
+                    ? 'text-[#39965F]'
+                    : 'hover:text-[#39965F] text-white'
                 }
               >
                 Haqida
@@ -63,10 +67,23 @@ function MainLayout({ children }) {
                 to="/projects"
                 onClick={closeMenu}
                 className={({ isActive }) =>
-                  isActive ? 'text-[#39965F]' : 'hover:text-[#39965F] text-white'
+                  isActive
+                    ? 'text-[#39965F]'
+                    : 'hover:text-[#39965F] text-white'
                 }
               >
                 Loyihalar
+              </NavLink>
+              <NavLink
+                to="/contact"
+                onClick={closeMenu}
+                className={({ isActive }) =>
+                  isActive
+                    ? 'text-[#39965F]'
+                    : 'hover:text-[#39965F] text-white'
+                }
+              >
+                Bog'lanish
               </NavLink>
             </nav>
 
@@ -76,7 +93,7 @@ function MainLayout({ children }) {
               rel="noopener noreferrer"
               className="hidden md:block hover:opacity-80 transition-all"
             >
-              <img src={github} alt="GitHub" width={32} />
+              <img src={github} alt="GitHub" width={30} />
             </a>
 
             <button
